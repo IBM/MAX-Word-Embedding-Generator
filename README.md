@@ -8,6 +8,23 @@ This demo contains scripts to run the Swivel algorithm on a preprocessed Wikiped
 For instructions on generating word embeddings on your own text corpus see the instructions in the
 [original repository here](https://github.com/tensorflow/models/tree/master/research/swivel).
 
+## Model Metadata
+| Domain | Application | Industry  | Framework | Training Data | Input Data Format |
+| ------------- | --------  | -------- | --------- | --------- | -------------- |
+| Text/NLP | Natural Language | General | TensorFlow | [Any Text Corpus (e.g. Wiki Dump)](https://dumps.wikimedia.org/backup-index.html) | Text |
+
+# References #
+[1]<a name="ref1"></a> N. Shazeer, R. Doherty, C. Evans, C. Waterson., ["Swivel: Improving Embeddings
+by Noticing What's Missing"](https://arxiv.org/pdf/1602.02215.pdf) arXiv preprint arXiv:1602.02215 (2016)
+
+## Licenses
+
+| Component | License | Link  |
+| ------------- | --------  | -------- |
+| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
+| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
+|Data|[CC BY-SA 3.0](https://en.wikipedia.org/wiki/Wikipedia:Copyrights)|[Wikipedia Text Dump](https://dumps.wikimedia.org/backup-index.html)|
+
 # Quickstart
 
 ## Prerequisites
@@ -83,16 +100,3 @@ king
 queen
 princess
 ```
-
-## Licenses
-
-| Component | License | Link  |
-| ------------- | --------  | -------- |
-| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
-| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
-|Data|[CC BY-SA 3.0](https://en.wikipedia.org/wiki/Wikipedia:Copyrights)|[Wikipedia Text Dump](https://dumps.wikimedia.org/backup-index.html)|
-
-
-# References #
-[1]<a name="ref1"></a> N. Shazeer, R. Doherty, C. Evans, C. Waterson., ["Swivel: Improving Embeddings
-by Noticing What's Missing"](https://arxiv.org/pdf/1602.02215.pdf) arXiv preprint arXiv:1602.02215 (2016)
