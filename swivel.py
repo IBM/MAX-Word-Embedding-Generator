@@ -34,7 +34,7 @@ This program expects an input directory that contains the following files.
   shards.recs
 
     A file containing the sub-matrix shards, stored as TFRecords.  Each shard is
-    expected to be a serialzed tf.Example protocol buffer with the following
+    expected to be a serialized tf.Example protocol buffer with the following
     properties:
 
       global_row: the global row indicies contained in the shard
