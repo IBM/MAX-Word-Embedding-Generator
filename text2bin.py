@@ -39,18 +39,18 @@ row-wise (i.e., each line must correspond to the same embedding), and they must
 have the same number of columns (i.e., be the same dimension).
 
 """
+from __future__ import print_function
 
-from itertools import izip
-from getopt import GetoptError, getopt
-import os
 import struct
 import sys
+from getopt import GetoptError, getopt
+from itertools import izip
 
 try:
   opts, args = getopt(
       sys.argv[1:], 'o:v:', ['output=', 'vocab='])
 except GetoptError as e:
-  print >> sys.stderr, e
+  print(e, file=sys.stderr)
   sys.exit(2)
 
 opt_output = 'vecs.bin'
@@ -74,7 +74,7 @@ def go(fhs):
           # raise IOError('vector files must be aligned')
           continue
 
-        print >> vocab_out, token
+        print(token, file=vocab_out)
 
         vec = [sum(float(x) for x in xs) for xs in zip(*parts)[1:]]
         if not fmt:
