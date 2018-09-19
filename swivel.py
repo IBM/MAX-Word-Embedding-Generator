@@ -64,7 +64,7 @@ import scipy.stats
 import tensorflow as tf
 
 
-train_data_path = os.environ["DATA_DIR"]
+train_data_path = "/tmp/data"
 result_path = os.environ["RESULT_DIR"]
 
 flags = tf.app.flags

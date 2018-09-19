@@ -8,7 +8,7 @@ model_definition:
   description: Training run for swivel
   execution:
 #Command to execute
-    command: python3 swivel.py
+    command: mkdir /tmp/data && for file in $DATA_DIR/*.zip; do unzip -d /tmp/data -q "$file"; done && python3 swivel.py
     compute_configuration:
 #Valid values for name - k80/k80x2/k80x4/p100/p100x2/v100/v100x2
       name: k80
