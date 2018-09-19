@@ -57,13 +57,21 @@ by Noticing What's Missing"](https://arxiv.org/pdf/1602.02215.pdf) arXiv preprin
 
 ## Training the model
 
-The `train.sh` utility script will deploy the experiment to WML and start the training as a `training-run`
+The `train.sh` utility script will prompt the user to enter the names of the buckets to be created for the training data and result weights and start training the model as a `training-run` on the Watson ML service.
 
 ```
-train.sh
+$ train.sh
+Enter a training bucket name
+
+$ word-embedding-data
+upload: ./data.zip to s3://word-embedding-data/data.zip
+
+Enter a results bucket name
+$ word-embedding-result
+...
 ```
 
-After the train is started, it should print the training-id that is going to be necessary for steps below
+After training has started, it should print the training-id that is going to be necessary for steps below
 
 ```
 Starting to train ...
