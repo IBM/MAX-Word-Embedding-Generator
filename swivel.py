@@ -21,7 +21,7 @@ This program expects an input directory that contains the following files.
 
   row_vocab.txt, col_vocab.txt
 
-    The row an column vocabulary files.  Each file should contain one token per
+    The row and column vocabulary files.  Each file should contain one token per
     line; these will be used to generate a tab-separate file containing the
     trained embeddings.
 
