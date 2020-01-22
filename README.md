@@ -104,4 +104,3 @@ princess
 ## Resources and Contributions
    
 If you are interested in contributing to the Model Asset Exchange project or have any queries, please follow the instructions [here](https://github.com/CODAIT/max-central-repo).
-
