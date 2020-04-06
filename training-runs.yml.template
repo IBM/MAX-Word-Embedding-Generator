@@ -2,7 +2,7 @@ model_definition:
   framework:
 #framework name and version (supported list of frameworks available at 'bx ml list frameworks')
    name: tensorflow
-   version: '1.5'
+   version: '1.15'
 #name of the training-run
   name: training-run-swivel
   description: Training run for swivel
