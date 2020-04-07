@@ -16,7 +16,7 @@ make_bucket() {
 
 if [ ! -f ./swivel_training_data.zip ]; then
   echo Downloading training data
-  curl -O http://max-assets.s3-api.us-geo.objectstorage.softlayer.net/tf/swivel_training_data.zip &&
+  curl -O https://max-cdn.cdn.appdomain.cloud/max-word-embedding-generator/1.0.0/swivel_training_data.zip &&
   unzip -q swivel_training_data.zip
 
   CREATE_SUCCESS=1
